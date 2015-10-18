@@ -61,10 +61,10 @@ The format for data is an Array of what you prefer. We will rely on your fit fun
 // THIS IS FOR THE 2D LINE EXAMPLE!!!! The format depends on your problem
 var data = [{
     x: 0,
-    y, 0.2
+    y: 0.2
 }, {
 	x: 2,
-	y, 1.9
+	y: 1.9
 }, {
 	x: 2.1,
 	y: 1.85
