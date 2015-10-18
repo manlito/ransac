@@ -49,7 +49,7 @@ var options = {
     sampleSize: 2,      // We only need 2 points to compute m and b
     threshold: 2.5,     // Used to determine if error is good enough
     maxIterations: 30,  // Number of times RANSAC will try a model
-    inliersRatio: 0.7,  // To accept a model, atl least 85% of points must fit
+    inliersRatio: 0.7,  // To accept a model, atl least 70% of points must fit
     improveModelWithConcensusSet: false // If model function supports more than sampleSize points, set this true to improve accepted models
 };
 
