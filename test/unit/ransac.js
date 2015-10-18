@@ -50,10 +50,5 @@ describe('Ransac', () => {
       expect(solution.model.m >= 0.8 && solution.model.m <= 1.2).to.equal(true);
     });
 
-    it('should have taken samples ' + maxIterations + ' times', () => {
-      spy(Ransac, 'sample');
-      expect(ransacProblem.sample).to.have.been.callCount(maxIterations);
-    });
-
   });
 });
