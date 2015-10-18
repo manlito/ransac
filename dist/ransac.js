@@ -73,6 +73,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     }, {
       key: 'estimate',
       value: function estimate(options) {
+
+        // Default options
+        options = options || {};
+        options.sampleSize = options.sampleSize || 2;
+        options.threshold = options.threshold || 0.1;
+        options.maxIterations = options.maxIterations || 30;
+        options.inliersRatio = options.inliersRatio || 0.7;
+        if (typeof options.improveModelWithConcensusSet === 'undefined') {
+          options.improveModelWithConcensusSet = true;
+        }
+
         var iteration = 0;
 
         // When iterating, we keep track of the best model so far

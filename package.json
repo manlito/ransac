@@ -1,6 +1,6 @@
 {
   "name": "ransac",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Implementation of random sample consensus (RANSAC), which can be used to fit a model for your data",
   "main": "dist/ransac.js",
   "scripts": {
